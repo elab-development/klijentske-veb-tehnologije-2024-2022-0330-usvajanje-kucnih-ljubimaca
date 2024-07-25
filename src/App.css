@@ -1,20 +1,7 @@
-.navbar-nav .nav-item .nav-link{
-  margin-left: 30px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Habibi&display=swap');
 
-.navbar-nav .nav-item .nav-link:hover{
-  color: white;
-  background-color: #fa9b00;
-  border-radius: 10%;
+:root {
+  font-family: "Habibi", serif;
+  margin: 0;
+  padding: 0;
 }
-.navbar {
-  background-color: #ffbe54;
-  font-size: 22px;
-  font-family: cursive;
-  color:white;
-}
-
-.nav-link{
-  padding: 50px;
-}
-

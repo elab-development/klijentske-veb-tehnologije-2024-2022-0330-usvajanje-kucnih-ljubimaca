@@ -16,15 +16,15 @@ interface NavBarItem {
 
 function App() {
   const items: NavBarItem[] = [
-    { name: "Pocetna", path: "/" },
-    { name: "Ulogujte se", path: "/login" },
-    { name: "Usvajanje", path: "/adopt" },
-    { name: "Kontakt", path: "/contact" }
+    { name: "pocetna", path: "/" },
+    { name: "ulogujte se", path: "/login" },
+    { name: "usvajanje", path: "/adopt" },
+    { name: "kontakt", path: "/contact" }
   ];
 
   return (
     <Router>
-      <NavBar brandName="UdomiMe" imageSrcPath={imagePath} navItems={items} />
+      <NavBar brandName="udomiMe" imageSrcPath={imagePath} navItems={items} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

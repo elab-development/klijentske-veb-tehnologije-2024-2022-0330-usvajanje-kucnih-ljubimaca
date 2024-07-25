@@ -1,0 +1,67 @@
+.hero{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.leftPic{
+    width:60vw;
+    height: 88.4vh;
+    margin-bottom: 0;
+
+}
+
+.rightPic{
+    width:40vw;
+    height:88.4vh;
+    margin-bottom: 0;
+}
+
+.heroHeading{
+    color:#F9AB55;
+    font-size: 60px;
+    background-color: white;
+    margin-top:-1.5vh;
+    text-align: center;
+
+}
+
+.leftText{
+    color:#4E598C;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 30vw;
+    position: absolute;
+    margin-left: 15vw;
+    margin-top: 26vh;
+   
+}
+
+.heroText{
+   padding-bottom:1.6vh;
+   padding-top:8vh;
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.pronadji{
+    color: #F9AB55;
+    background-color: transparent;
+    border-color: #4E598C;
+    border-radius: 25px;
+    padding: 4vh 5vw 4vh 5vw;
+    font-size: 20px;
+    box-shadow: 2px 0px 4px 0px #4E598C;
+   margin-top: 10vh;
+   font-weight: bold;
+}
+
+.pronadji:hover{
+    color: #4E598C;
+    background-color: #F9AB55;
+    cursor: pointer;
+}
+
