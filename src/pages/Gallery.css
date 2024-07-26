@@ -1,0 +1,27 @@
+.allContents{
+    width: 98.8vw;
+    height: 150vh;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+}
+.contents{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin-top: 10vh;
+    margin-left: 4vw;
+}
+
+.headingGallery{
+    font-size: 40px;
+    text-align: center;
+    color: #4E598C;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10vh;
+
+}

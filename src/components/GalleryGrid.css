@@ -1,0 +1,11 @@
+.galleryGrid{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    gap:5vw;
+    padding: 10vh 10vw;
+    border: 1px solid rgb(222, 212, 212);
+    border-radius: 5%;
+}

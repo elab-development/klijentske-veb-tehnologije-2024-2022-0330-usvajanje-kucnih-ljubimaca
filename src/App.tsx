@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Contact from "./pages/Contact";
 import Adopt from "./pages/Adopt";
 import Login from "./pages/Login";
+import Gallery from "./pages/Gallery"
 
 interface NavBarItem {
   name: string;
@@ -17,8 +18,9 @@ interface NavBarItem {
 function App() {
   const items: NavBarItem[] = [
     { name: "pocetna", path: "/" },
-    { name: "ulogujte se", path: "/login" },
     { name: "usvajanje", path: "/adopt" },
+    { name: "galerija", path: "/gallery" },
+    { name: "ulogujte se", path: "/login" },
     { name: "kontakt", path: "/contact" }
   ];
 
@@ -27,8 +29,9 @@ function App() {
       <NavBar brandName="udomiMe" imageSrcPath={imagePath} navItems={items} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/adopt" element={<Adopt />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
