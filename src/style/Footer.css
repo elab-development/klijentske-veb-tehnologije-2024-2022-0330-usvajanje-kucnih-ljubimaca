@@ -1,0 +1,46 @@
+*{
+    font-family: cursive;
+}
+
+.footer{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: orange;
+
+}
+
+.icon{
+    height: 25px;
+}
+
+p{
+    font-size: 20px;
+}
+.footer11 {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+   
+.icon {
+    height: 25px; 
+}
+  
+.footer11 p {
+    padding-top: 10px; 
+    font-size: 20px; 
+}
+
+.footer1 {
+   display: flex;
+}
+
+.footer-img {
+    bottom: 0;
+    right: 30px;
+    width: 250px; 
+}
+
+

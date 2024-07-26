@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Adopt from "./pages/Adopt";
 import Login from "./pages/Login";
 import Gallery from "./pages/Gallery"
+import Footer from "./components/Footer"
 
 interface NavBarItem {
   name: string;
@@ -34,6 +35,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
