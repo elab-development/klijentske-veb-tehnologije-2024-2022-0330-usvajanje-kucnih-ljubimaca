@@ -1,4 +1,4 @@
-import "./GalleryCard.css"
+import "../style/GalleryCard.css"
 import React from 'react'
 
 interface GalleryCardProps{

@@ -1,33 +1,27 @@
-import React, {useState, useEffect} from 'react'
-import "./GalleryGrid.css"
+import React from 'react'
+import "../style/GalleryGrid.css"
 import GalleryCard from "./GalleryCard"
+import useFetch from './useFetch'
 
-const GalleryGrid: React.FC = () => {
-    const [dogImages, setDogImages] = useState<string[]>([]);
-
-    useEffect(() => {
-        const fetchDogImages = async () => {
-            try{
-                const response = await fetch('https://dog.ceo/api/breeds/image/random/6');
-                if(!response.ok){
-                    throw new Error('Bad response from network');
-                }
-                const data = await response.json();
-                setDogImages(data.message);
-            }catch(error){
-                console.error('Error fetching data: ', error);
-            }
-        };
-
-        fetchDogImages();
-    },[]) //mora, inace se stalno menjaju slike
-  return (
-    <div className="galleryGrid">
-      {dogImages.map((dogImage,index) => (
-        <GalleryCard key={index} dogImage={dogImage}/>
-      ))}
-    </div>
-  );
+interface DogImagesResponse {
+  message: string[];
+  status: string;
 }
 
-export default GalleryGrid
+const GalleryGrid: React.FC = () => {
+  const { data, loading, error } = useFetch<DogImagesResponse>('https://dog.ceo/api/breeds/image/random/6');
+
+  if (loading) return <h1 className="loading">Ucitavanje...</h1>;
+  if (error) return <h1 className="error">Greska: {error.message}</h1>;
+
+  return (
+    <div className="galleryGrid">
+        {data?.message.map((url, index) => (
+          <GalleryCard key={index} dogImage={url} />
+        ))}
+    </div>
+  );
+};
+
+
+export default GalleryGrid;

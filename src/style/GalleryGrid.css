@@ -9,3 +9,8 @@
     border: 1px solid rgb(222, 212, 212);
     border-radius: 5%;
 }
+
+.loading{
+    text-align: center;
+    color: #4E598C;
+}
