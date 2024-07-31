@@ -1,0 +1,38 @@
+.pet-all{
+    background-image: url('../assets/pozadina.png');
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin: 50px;
+    border: 2px solid rgba(0, 98, 255, 0.718);
+    display: flex;
+    flex-direction: row;
+}
+
+.imagess{
+    padding: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.imagess img{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.about-text{
+    padding: 30px;
+    flex: 1;
+    border-left: 2px solid rgba(0, 98, 255, 0.718);
+}
+
+.about-text p{
+   font-size: larger;
+}

@@ -11,6 +11,9 @@ import Login from "./pages/Login";
 import Gallery from "./pages/Gallery"
 import Footer from "./components/Footer"
 
+import About1 from './pages/LearnMore/AboutBeni';
+import About2 from './pages/LearnMore/AboutDzeki'
+
 interface NavBarItem {
   name: string;
   path: string;
@@ -25,6 +28,7 @@ function App() {
     { name: "kontakt", path: "/contact" }
   ];
 
+  //prvi routes je za navbar, drugi je za detaljniji opis svakog ljubimca
   return (
     <Router>
       <NavBar brandName="udomiMe" imageSrcPath={imagePath} navItems={items} />
@@ -35,6 +39,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Routes>
+        <Route path="/about1" element={<About1 />} />
+        <Route path="/about2" element={<About2 />} />
+      </Routes>
+
       <Footer/>
     </Router>
   );
