@@ -36,6 +36,9 @@
 }
 
 @media (max-width: 600px){
+    .card-all{
+        flex-direction: column;
+    }
     .card-container{
         width: 70vw;
      }
@@ -43,5 +46,7 @@
      
         width: 70vw;
     }
+    .card-filter{
+        width: 100%;
   }
-
+}

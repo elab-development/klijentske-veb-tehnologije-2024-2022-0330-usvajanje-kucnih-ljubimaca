@@ -43,4 +43,11 @@ p{
     width: 200px; 
 }
 
-
+@media (max-width: 600px){
+    p{
+        font-size: 10px;
+    }
+    .footer-img {
+        width: 0px; 
+    }
+}

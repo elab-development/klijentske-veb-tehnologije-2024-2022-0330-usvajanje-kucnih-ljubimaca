@@ -1,7 +1,8 @@
 .hero{
     display: flex;
     flex-direction: row;
-    width: 98.9vw;
+    /*width: 98.9vw;*/
+    width: 100%;
 }
 
 .leftPic{
@@ -41,9 +42,9 @@
 .heroText{
    padding-bottom:1.6vh;
    padding-top:8vh;
-    background-color: white;
-    text-align: center;
-    font-size: 25px;
+   background-color: white;
+   text-align: center;
+   font-size: 25px;
     
 }
 
@@ -65,3 +66,30 @@
     cursor: pointer;
 }
 
+@media (max-width: 600px){
+    .hero{
+        flex-direction: column;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .leftPic{
+        width: 100%;
+    }
+    .rightPic{
+        width: 100%;
+        height: fit-content;
+    }
+    .heroHeading{
+        padding-top:0px;
+        font-size: 30px;
+    }
+    .heroText{
+        font-size: 20px;
+    }
+    .leftText{
+        margin: 0px;
+    }
+}
