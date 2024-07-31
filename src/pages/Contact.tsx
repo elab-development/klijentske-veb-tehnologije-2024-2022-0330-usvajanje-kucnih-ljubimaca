@@ -55,7 +55,6 @@ function Contact() {
       />
       </div>
     </div>
-
   )
 }
 

@@ -7,11 +7,12 @@ interface ImageCardProps{
   text: string;
   buttonText: string;
   path: string;
+  categories :string[]
 }
 
-function ImageCard ({imagee, title, text, buttonText, path} : ImageCardProps) {
+function ImageCard ({imagee, title, text, buttonText, path, categories} : ImageCardProps) {
   return (
-    <div className='card'>
+    <div className='card' >
       <div>
         <img src={imagee} alt={title} className="image" />
       </div>

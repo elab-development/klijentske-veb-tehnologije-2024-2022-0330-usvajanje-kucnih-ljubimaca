@@ -3,7 +3,7 @@
 }
 
 .footer{
-    padding-top: 30px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -12,11 +12,11 @@
 }
 
 .icon{
-    height: 25px;
+    height: 20px;
 }
 
 p{
-    font-size: 20px;
+    font-size: 15px;
 }
 .footer11 {
     display: flex;
@@ -25,12 +25,12 @@ p{
   }
    
 .icon {
-    height: 25px; 
+    height: 20px; 
 }
   
 .footer11 p {
     padding-top: 10px; 
-    font-size: 20px; 
+    font-size: 15px; 
 }
 
 .footer1 {
@@ -40,7 +40,7 @@ p{
 .footer-img {
     bottom: 0;
     right: 30px;
-    width: 250px; 
+    width: 200px; 
 }
 
 
