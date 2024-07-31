@@ -8,3 +8,8 @@
     font-size: 20px;
 }
 
+@media (max-width: 700px) {
+    .filter-container {
+        font-size: 15px;
+    }
+  }

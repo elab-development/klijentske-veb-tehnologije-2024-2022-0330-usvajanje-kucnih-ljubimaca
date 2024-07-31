@@ -40,9 +40,10 @@ const Adopt = () => {
         <Filter categories={allCategories} onFilterChange={setSelectedCategories} />
       </div>
       <div className="card-container">
+        <div className="cards">
         {currentItems.map((card, index) => (
           <ImageCard key={index} {...card} />
-        ))}
+        ))}</div>
         <Pagination
         currentPage={currentPage}
         totalPages={totalPages}

@@ -34,3 +34,15 @@
     font-weight: bold;
     text-decoration: underline;
   }
+
+  @media (max-width: 600px){
+    .page-number {
+      margin: 0 2px;
+      font-size: 13px;
+    }
+
+    .pagination button {
+      margin: 0 2px;
+      padding: 7px 15px;
+    }
+  }

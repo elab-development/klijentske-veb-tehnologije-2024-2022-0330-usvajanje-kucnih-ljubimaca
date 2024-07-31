@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../style/Filer.css'
+import '../style/Filter.css'
 
 interface FilterProps {
   categories: string[];
