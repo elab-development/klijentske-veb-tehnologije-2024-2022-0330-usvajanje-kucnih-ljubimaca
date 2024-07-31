@@ -12,7 +12,12 @@ import Gallery from "./pages/Gallery"
 import Footer from "./components/Footer"
 
 import About1 from './pages/LearnMore/AboutBeni';
-import About2 from './pages/LearnMore/AboutDzeki'
+import About2 from './pages/LearnMore/AboutDzeki';
+import About3 from './pages/LearnMore/AboutGarfild';
+import About4 from './pages/LearnMore/AboutBela';
+import About5 from './pages/LearnMore/AboutBendzamin';
+import About6 from './pages/LearnMore/AboutCupko';
+import About7 from './pages/LearnMore/AboutPipi';
 
 interface NavBarItem {
   name: string;
@@ -42,6 +47,11 @@ function App() {
       <Routes>
         <Route path="/about1" element={<About1 />} />
         <Route path="/about2" element={<About2 />} />
+        <Route path="/about3" element={<About3 />} />
+        <Route path="/about4" element={<About4 />} />
+        <Route path="/about5" element={<About5 />} />
+        <Route path="/about6" element={<About6 />} />
+        <Route path="/about7" element={<About7 />} />
       </Routes>
 
       <Footer/>
