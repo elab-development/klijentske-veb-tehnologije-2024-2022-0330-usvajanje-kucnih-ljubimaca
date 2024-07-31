@@ -3,6 +3,11 @@ import '../style/Login.css'
 import InputField from '../components/InputField';
 import { Link } from 'react-router-dom';
 
+import Modal from 'react-modal';
+import Popup from '../components/Popup'
+Modal.setAppElement('#root');
+import '../style/Popup.css'
+
 const Login: React.FC = () => {
   const [petName, setPetName] = useState('');
   const [petSpecies, setPetSpecies] = useState('');
@@ -32,6 +37,12 @@ const Login: React.FC = () => {
     setInputValue3(e.target.value);
   };
 
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const handleSubmit = () => {
+    setIsPopupOpen(true);
+  };
+
   return (
     <div className='request-all'>
       <h1>Posaljite upit</h1>
@@ -43,7 +54,7 @@ const Login: React.FC = () => {
       </Link>
       <h3>Ime ljubimca: {petName}</h3>
       <h3>Vrsta: {petSpecies}</h3>
-      <img src={petImage} alt='' style={{ width: '200px', height: '200px' }} />
+      <img src={petImage} alt='slika ljubimca' style={{ width: '200px', height: '200px' }} />
       <div className='contact-form'>
         <InputField
             value={inputValue1}
@@ -60,7 +71,17 @@ const Login: React.FC = () => {
             onChange={handleInputChange3}
             label="Upisite e-mail adresu:"
         />
+        <button onClick={handleSubmit}>Posalji upit</button>
       </div>
+      <Popup 
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+        name={petName}
+        species={petSpecies} 
+        nameSurname={inputValue1}
+        address={inputValue2}
+        email={inputValue3}                
+      />
     </div>
 
   );

@@ -17,7 +17,7 @@
     font-size: 25px;
 }
 
-.buttonn{
+.request-all button{
     color: #F9AB55;
     background-color: transparent;
     border-color: #4E598C;
@@ -26,6 +26,7 @@
     font-size: 20px;
     box-shadow: 2px 0px 4px 0px #4E598C;
     font-weight: bold;
+    margin: 25px;
 }
 
 .contact-form {
@@ -35,4 +36,3 @@
     align-items: start;
     padding-bottom: 50px;
 }
-
