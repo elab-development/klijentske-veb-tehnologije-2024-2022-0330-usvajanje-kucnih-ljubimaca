@@ -29,7 +29,7 @@ function App() {
     { name: "pocetna", path: "/" },
     { name: "usvajanje", path: "/adopt" },
     { name: "galerija", path: "/gallery" },
-    { name: "ulogujte se", path: "/login" },
+    { name: "posaljite upit", path: "/login" },
     { name: "kontakt", path: "/contact" }
   ];
 

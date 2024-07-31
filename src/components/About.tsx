@@ -14,7 +14,13 @@ const About = ({ image1, image2, image3, name, species, description }: AboutProp
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    navigate('/inquiry', { state: { name, species } });
+    // cuvanje podataka u localStorage
+    localStorage.setItem('petName', name);
+    localStorage.setItem('petSpecies', species);
+    localStorage.setItem('petImage', image1);
+
+    //navigacija za dugme
+    navigate('/login');
   };
 
   return (
