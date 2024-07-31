@@ -1,28 +1,38 @@
 import ImageCard from '../components/ImageCard'
 import Filter from '../components/Filter';
-import { useState } from 'react';
-import img1 from '../assets/adopt1.jpg'
-import img2 from '../assets/adopt2.jpg'
-import img3 from '../assets/adopt3.jpg'
-import img4 from '../assets/adopt4.jpg'
-import img5 from '../assets/adopt5.jpg'
+import { useState, useEffect } from 'react';
+import {cards} from '../components/adoptData'
 import '../style/Adopt.css'
+import Pagination from '../components/Pagination'; 
+
+const itemsPerPage = 2;
 
 const Adopt = () => {
+  //logika za filter
   const allCategories = ['pas', 'macka', 'zec'];
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-
-  const cards = [
-    { imagee: img1, title: 'Beni', text: 'pas', buttonText: 'saznaj vise', path: '', categories: ['pas'] },
-    { imagee: img2, title: 'Dzeki', text: 'pas', buttonText: 'saznaj vise', path: '', categories: ['pas'] },
-    { imagee: img3, title: 'Cici', text: 'macka', buttonText: 'saznaj vise', path: '', categories: ['macka'] },
-    { imagee: img4, title: 'Bela', text: 'pas', buttonText: 'saznaj vise', path: '', categories: ['pas'] },
-    { imagee: img5, title: 'Bendzamin', text: 'macka', buttonText: 'saznaj vise', path: '', categories: ['macka'] },
-  ];
 
   const filteredCards = cards.filter((card) =>
     selectedCategories.length === 0 || card.categories.some((category) => selectedCategories.includes(category))
   );
+
+  //logika za paginaciju
+  const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  const totalPosts = filteredCards.length;
+  const totalPages = Math.ceil(totalPosts / itemsPerPage);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentItems = filteredCards.slice(startIndex, endIndex);
 
   return (
     <div className='card-all'>
@@ -30,11 +40,17 @@ const Adopt = () => {
         <Filter categories={allCategories} onFilterChange={setSelectedCategories} />
       </div>
       <div className="card-container">
-        {filteredCards.map((card, index) => (
+        {currentItems.map((card, index) => (
           <ImageCard key={index} {...card} />
         ))}
-      </div>
+        <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
     </div>
+      </div>
+      
   );
 };
 
