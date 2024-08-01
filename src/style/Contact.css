@@ -6,8 +6,11 @@
 
 .gallery {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
 
 .contact-all h1{
     margin-top: 50px;
@@ -59,3 +62,17 @@
     height: 1.5px;
     background-color: #4E598C;
 }
+
+@media(max-width: 1400px){
+.imgg{
+    border-radius: 30px;
+    height: 300px;
+}
+}
+
+@media(max-width: 1000px){
+    .imgg{
+        border-radius: 20px;
+        height: 200px;
+    }
+    }
