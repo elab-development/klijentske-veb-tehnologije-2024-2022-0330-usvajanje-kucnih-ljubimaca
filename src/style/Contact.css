@@ -32,3 +32,30 @@
     margin: 30px;
     height: 400px;
 }
+
+.facts{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    row-gap: 3vh;
+    margin-bottom: 5vh;
+}
+
+.facts .facts-button{
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #4E598C;
+
+}
+
+.facts .facts-button:hover{
+    background-color:#F9AB55;
+   
+}
+
+.crta{
+    width: 90vw;
+    height: 1.5px;
+    background-color: #4E598C;
+}

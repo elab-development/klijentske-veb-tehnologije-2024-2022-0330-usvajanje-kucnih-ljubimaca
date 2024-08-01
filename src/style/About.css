@@ -9,9 +9,11 @@
 
 .container{
     margin: 50px;
-    border: 2px solid rgba(0, 98, 255, 0.718);
+    border: 2px solid rgb(222, 212, 212);
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
 
 .imagess{
@@ -30,9 +32,20 @@
 .about-text{
     padding: 30px;
     flex: 1;
-    border-left: 2px solid rgba(0, 98, 255, 0.718);
+    border-left: 2px solid rgb(222, 212, 212);
 }
 
 .about-text p{
    font-size: larger;
+}
+
+.submit{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+.submit:hover{
+    background-color: #F9AB55;
 }

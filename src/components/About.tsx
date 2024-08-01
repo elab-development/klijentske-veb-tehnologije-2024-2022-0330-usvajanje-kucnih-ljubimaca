@@ -36,7 +36,7 @@ const About = ({ image1, image2, image3, name, species, description }: AboutProp
                 <h4>Vrsta: {species}</h4>
                 <h4>Opis:</h4>
                 <p>{description}</p>
-                <button onClick={handleSubmit}>Posalji upit</button>
+                <button onClick={handleSubmit} className='submit'>pošalji upit</button>
             </div>
         </div>
     </div>
