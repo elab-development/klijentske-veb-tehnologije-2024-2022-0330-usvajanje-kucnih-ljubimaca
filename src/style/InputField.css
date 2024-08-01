@@ -14,3 +14,19 @@
 .input-field input{
     width: 110%;
 }
+
+@media (max-width: 600px){
+    .input-field{
+        font-size: 18px;
+        font-family: cursive;
+    }
+    
+    .input-field label{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .input-field input{
+        width: 90%;
+    }
+}

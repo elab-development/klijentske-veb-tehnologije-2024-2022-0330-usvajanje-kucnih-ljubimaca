@@ -2,5 +2,12 @@
     width: 300px;
     height: 300px;
     box-shadow: 3px 0 12px 0px #817e7d;
+}
 
+@media (max-width: 600px){
+    .dogImage{
+        width: 200px;
+        height: 200px;
+        box-shadow: 3px 0 12px 0px #817e7d;
+    }
 }

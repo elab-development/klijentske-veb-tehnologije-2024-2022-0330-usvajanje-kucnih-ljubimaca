@@ -9,9 +9,9 @@ function Gallery() {
         <h1 className="headingGallery">Udomljeni ljubimci</h1>
         <GalleryGrid/>
       </div>
-      <img src='./src/assets/pozadina.png' className="background"/>
     </div>
   )
 };
 
 export default Gallery
+

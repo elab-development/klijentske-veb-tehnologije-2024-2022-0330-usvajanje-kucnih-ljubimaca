@@ -50,11 +50,20 @@
     .card{
         display: flex;
         flex-direction: column;
-        width: 27vh;
+        width: 25vh;
         height: 50vh;
     }
 
     .card img{
         border-radius: 10px 10px 0 0;
+        width: 25vh;
+        height: 25vh;
+    }
+    .card1 p{
+        font-size: large;
+    }
+    .card1 button{
+        height: 50px;
+        width: 150px;
     }
   }

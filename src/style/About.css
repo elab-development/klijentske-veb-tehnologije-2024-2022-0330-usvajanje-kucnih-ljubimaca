@@ -49,3 +49,28 @@
 .submit:hover{
     background-color: #F9AB55;
 }
+
+@media (max-width: 600px){
+    .container{
+        margin: 25px;
+        flex-direction: column;
+    }
+    .imagess{
+        padding: 30px;
+        width: 100%;
+    }
+    .imagess img{
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    .about-text{
+        padding: 30px;
+        width: 100%;
+        border-left: 0px;
+        border-top: 2px solid rgb(222, 212, 212);;
+    }
+    .about-text p{
+        font-size: large;
+     }
+}

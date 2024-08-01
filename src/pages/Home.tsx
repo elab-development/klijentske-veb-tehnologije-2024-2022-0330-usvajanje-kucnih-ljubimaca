@@ -1,5 +1,7 @@
 import {Link} from "react-router-dom";
 import "./Home.css"
+import image1 from '../assets/pozadina.png'
+import image2 from '../assets/bannerDog.jpg'
 
 function Home() {
   return (
@@ -11,10 +13,10 @@ function Home() {
        <Link to="/adopt" className="usvojiLink"><button className="pronadji">udomi</button></Link>
 
       </div>
-    <img src='./src/assets/pozadina.png' className='leftPic'/>
+    <img src={image1} className='leftPic'/>
     </div>
     <div className="right">
-      <img src='./src/assets/bannerDog.jpg' className="rightPic"/>
+      <img src={image2} className="rightPic"/>
     </div>
   </div>
   )

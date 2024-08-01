@@ -1,16 +1,14 @@
 .allContents{
-    width: 98.8vw;
-    height: 150vh;
-}
-
-.background{
-    width: 100%;
+    background-image: url('../assets/pozadina.png');
+    background-size: cover;
     height: 100%;
-}
-.contents{
-    position: absolute;
+    display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.contents{
     width: 90vw;
     margin-top: 10vh;
     margin-left: 4vw;

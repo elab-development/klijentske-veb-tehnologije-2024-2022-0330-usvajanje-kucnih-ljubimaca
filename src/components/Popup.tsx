@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import '../style/Popup.css'
 
 Modal.setAppElement('#root');
 
@@ -21,12 +22,12 @@ const Popup: React.FC<PopupProps> = ({ isOpen, onClose, name, species, nameSurna
       className="popup-content"
       overlayClassName="popup-overlay"
     >
-      <h2>Uspešno poslato!</h2>
-      <p><strong>Ime ljubimca:</strong> {name}</p>
-      <p><strong>Vrsta:</strong> {species}</p>
-      <p><strong>Ime i prezime:</strong> {nameSurname}</p>
-      <p><strong>Adresa:</strong> {address}</p>
-      <p><strong>E-mail adresa:</strong> {email}</p>
+      <h2 className='popup-heading'>Uspešno poslato!</h2>
+      <p className='popup-text'><strong>Ime ljubimca:</strong> {name}</p>
+      <p className='popup-text'><strong>Vrsta:</strong> {species}</p>
+      <p className='popup-text'><strong>Ime i prezime:</strong> {nameSurname}</p>
+      <p className='popup-text'><strong>Adresa:</strong> {address}</p>
+      <p className='popup-text'><strong>E-mail adresa:</strong> {email}</p>
       <button className="popup-close" onClick={onClose}>Zatvori</button>
     </Modal>
   );
