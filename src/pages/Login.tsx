@@ -71,7 +71,7 @@ const Login: React.FC = () => {
             onChange={handleInputChange3}
             label="Upisite e-mail adresu:"
         />
-        <button onClick={handleSubmit}>Posalji upit</button>
+        <button onClick={handleSubmit}>pošalji upit</button>
       </div>
       <Popup 
         isOpen={isPopupOpen}

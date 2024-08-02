@@ -21,19 +21,23 @@
     color: #F9AB55;
     background-color: transparent;
     border-color: #4E598C;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 10px 20px 10px 20px;
     font-size: 20px;
     box-shadow: 2px 0px 4px 0px #4E598C;
     font-weight: bold;
     margin: 25px;
 }
+.request-all button:hover{
+    background-color: #F9AB55;
+    color: #4E598C;
+}
 
 .contact-form {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     padding-bottom: 50px;
 }
 

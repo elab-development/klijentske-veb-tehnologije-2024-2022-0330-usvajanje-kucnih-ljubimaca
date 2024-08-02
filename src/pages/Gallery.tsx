@@ -1,6 +1,6 @@
 import React from 'react'
 import GalleryGrid from '../components/GalleryGrid'
-import "./Gallery.css"
+import "../style/Gallery.css"
 
 function Gallery() {
   return (

@@ -1,9 +1,6 @@
 import "../style/GalleryCard.css"
 import React from 'react'
-
-interface GalleryCardProps{
-    dogImage:string;
-}
+import { GalleryCardProps } from "../modules/galleryCardModel";
 
 const GalleryCard: React.FC<GalleryCardProps> = ({ dogImage }) => {
   return (

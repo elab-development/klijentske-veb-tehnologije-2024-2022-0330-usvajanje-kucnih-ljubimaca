@@ -107,3 +107,17 @@
         width: 80%;
     }
 }
+@media (max-width: 1400px){
+    .leftText{
+        margin-top: 16vh;
+        margin-bottom: 2vh;
+    }
+
+    .leftText .heroHeading{
+        font-size: 50px;
+    }
+
+    .leftText .heroText{
+        font-size: 30px;
+    }
+}

@@ -1,18 +1,9 @@
 import React from 'react';
 import Modal from 'react-modal';
 import '../style/Popup.css'
+import { PopupProps } from '../modules/popupPropsModel';
 
 Modal.setAppElement('#root');
-
-interface PopupProps {
-  isOpen: boolean;
-  onClose: () => void;
-  name: string;
-  species: string;
-  nameSurname: string;
-  address: string;
-  email: string;
-}
 
 const Popup: React.FC<PopupProps> = ({ isOpen, onClose, name, species, nameSurname, address, email}) => {
   return (

@@ -1,12 +1,7 @@
 import React from 'react';
 import '../style/Pagination.css'
+import { PaginationProps } from '../modules/paginationModel';
 
-
-interface PaginationProps {
-  currentPage: number;
-  totalPages: number;
-  onPageChange: (page: number) => void;
-}
 
 const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPageChange }) => {
   // Generate page numbers using a for loop

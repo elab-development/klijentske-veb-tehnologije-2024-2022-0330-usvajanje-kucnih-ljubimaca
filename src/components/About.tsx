@@ -1,14 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import '../style/About.css'
-
-interface AboutProps{
-    image1 : string;
-    image2 : string;
-    image3 : string;
-    name: string; 
-    species: string; 
-    description: string; 
-}
+import { AboutProps } from '../modules/aboutModel';
 
 const About = ({ image1, image2, image3, name, species, description }: AboutProps) => {
   const navigate = useNavigate();

@@ -13,7 +13,7 @@ import Footer from "./components/Footer"
 
 import About1 from './pages/LearnMore/AboutBeni';
 import About2 from './pages/LearnMore/AboutDzeki';
-import About3 from './pages/LearnMore/AboutGarfild';
+import About3 from './pages/LearnMore/AboutCici';
 import About4 from './pages/LearnMore/AboutBela';
 import About5 from './pages/LearnMore/AboutBendzamin';
 import About6 from './pages/LearnMore/AboutCupko';

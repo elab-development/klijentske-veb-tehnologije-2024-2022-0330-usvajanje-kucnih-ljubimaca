@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import '../style/Filter.css'
+import { FilterProps } from '../modules/filterModel';
 
-interface FilterProps {
-  categories: string[];
-  onFilterChange: (selectedCategories: string[]) => void;
-}
 
 const Filter = ({ categories, onFilterChange }: FilterProps) => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);

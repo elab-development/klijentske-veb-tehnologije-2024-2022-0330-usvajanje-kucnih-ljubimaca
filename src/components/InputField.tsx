@@ -1,11 +1,6 @@
 import React from 'react';
 import '../style/InputField.css'
-
-interface InputFieldProps {
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  label: string;
-}
+import { InputFieldProps } from '../modules/inputFieldModel';
 
 const InputField: React.FC<InputFieldProps> = ({ value, onChange, label}) => {
   return (

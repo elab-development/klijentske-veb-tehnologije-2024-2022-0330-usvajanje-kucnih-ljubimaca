@@ -70,7 +70,7 @@ const [url, setUrl] = useState(`${DOG_FACTS_API_URL}?_=${Date.now()}`);
       <div className="facts" ref={factRef}>
         <h1>Zanimljivosti o psima</h1>
         <button onClick={fetchRandomFact} disabled={loading} className="facts-button">
-        prikazi zanimljivost
+        prikaži zanimljivost
         </button>
         {randomFact && <p>{randomFact}</p>}
       </div>
