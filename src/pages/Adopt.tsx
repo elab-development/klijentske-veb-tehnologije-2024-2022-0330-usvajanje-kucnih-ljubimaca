@@ -1,9 +1,10 @@
-import ImageCard from '../components/ImageCard'
+//import ImageCard from '../components/ImageCard'
 import Filter from '../components/Filter';
 import { useState, useEffect } from 'react';
 import {cards} from '../components/adoptData'
 import '../style/Adopt.css'
 import Pagination from '../components/Pagination'; 
+import Imagecard from '../modules/Imagecard';
 
 const itemsPerPage = 2;
 
@@ -42,7 +43,7 @@ const Adopt = () => {
       <div className="card-container">
         <div className="cards">
         {currentItems.map((card, index) => (
-          <ImageCard key={index} {...card} />
+          <Imagecard key={index} {...card} />
         ))}</div>
         <Pagination
         currentPage={currentPage}

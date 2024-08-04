@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../style/Login.css'
-import InputField from '../components/InputField';
+//import InputField from '../components/InputField';
+import Inputfield from '../modules/Inputfield';
 import { Link } from 'react-router-dom';
 
 import Modal from 'react-modal';
@@ -52,21 +53,23 @@ const Login: React.FC = () => {
             udomi
         </button>
       </Link>
+      <div className="crta"></div>
+      <h2>Odabrani ljubimac</h2>
       <h3>Ime ljubimca: {petName}</h3>
       <h3>Vrsta: {petSpecies}</h3>
       <img src={petImage} alt='slika ljubimca' style={{ width: '200px', height: '200px' }} />
       <div className='contact-form'>
-        <InputField
+        <Inputfield
             value={inputValue1}
             onChange={handleInputChange1}
             label="Upisite ime i prezime:"
           />
-        <InputField
+        <Inputfield
             value={inputValue2}
             onChange={handleInputChange2}
             label="Upisite adresu:"
           />
-        <InputField
+        <Inputfield
             value={inputValue3}
             onChange={handleInputChange3}
             label="Upisite e-mail adresu:"
