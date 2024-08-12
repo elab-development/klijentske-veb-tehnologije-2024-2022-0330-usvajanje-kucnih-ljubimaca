@@ -1,30 +1,79 @@
-# React + TypeScript + Vite
+# Aplikacija za usvajanje kućnih ljubimaca
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dobrodošli u aplikaciju udomiMe! Osnovna namena ove aplikacije je omogućavanje korisnicima da usvoje životinje koje nemaju dom.
 
-Currently, two official plugins are available:
+## Sadržaj
+- [Funkcionalnosti](#funkcionalnosti)
+- [Instalacija](#instalacija)
+- [Korišćenje](#korišćenje)
+- [Tehničke informacije](#tehničke-informacije)
+- [Kontakt](#kontakt)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Funkcionalnosti**
+- **Navigacioni Meni:** Omogućava korisnicima jednostavnu navigaciju kroz različite delove aplikacije
+- **Spisak Ljubimaca:** Pregled ljubimaca dostupnih za usvajanje
+- **Filtriranje Ljubimaca:** Filtriranje dostupnih ljubimaca po tipu (pas,macka ili zec)
+- **Informacije o ljubimcu:** Prikaz detaljnih informacija o odabranom ljubimcu
+- **Sekcija za Zanimljivosti:** Generisanje zanimljivosti o psima
+- **Galerija Usvojenih Ljubimaca:** Prikaz slika usvojenih ljubimaca
+- **Upit za Ljubimca:** Forma koja omogućava korisnicima da pošalju upit za ljubimca za kog su se odlučili
+- **Popup Prozor za Upit:** Prikazuje pregled poslatog popunjenog upita za odabranog ljubimca
+- **Paginacija:** Omogućava pregled dostupnih ljubimaca kroz više stranica i olakšava korisnicima navigaciju kroz podatke
 
-## Expanding the ESLint configuration
+## **Instalacija**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Da biste započeli instalaciju ove aplikacije, pratite sledeće korake:
 
-- Configure the top-level `parserOptions` property like this:
+1. **Klonirajte repozitorijum:**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+   ```bash
+   git clone https://github.com/elab-development/klijentske-veb-tehnologije-2024-2022-0330-usvajanje-kucnih-ljubimaca.git
+   ```
+2. **Instalirajte zavisnosti:**
+  Prvo pređite u direktorijum u koji ste klonirali aplikaciju 
+   ```bash
+  cd klijentske-veb-tehnologije-2024-2022-0330-usvajanje-kucnih-ljubimaca
+   ```
+  
+  Sada instalirajte zavisnosti
+  ```bash
+  npm install
+  ```
+3. **Pokrenite aplikaciju:**
+  Nakon što su sve zavisnosti instalirane aplikaciju pokrećete lokalno kucanjem komande
+  ```bash
+  npm run dev
+  ```
+4. **Pristupite aplikaciji:**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  Otvorite web browser i idite na [http://localhost:3000](http://localhost:3000) za lokalni pristup aplikaciji
+
+## **Korišćenje**
+
+1. **Pretraživanje ljubimaca:**
+
+    - Možeze koristiti filtere za pretragu ljubimaca
+    - Kliknite na profile ljubimaca za više informacija
+
+2. **Prijava za usvajanje:**
+
+    - Kliknite na opciju za usvajanje na stranici profila ljubimca i popunite formu za usvajanje
+    - Pregledajte popunjenu formu za ljubimca koga ste odabrali
+
+## **Tehničke informacije**
+- **Tehnologije:** React, TypeScript
+- **API:** 
+  - **Spoljni API**: 
+        - Koristimo [DogAPI](https://dog.ceo/dog-api/) za prikaz slika u Galeriji usvojenih ljubimaca
+        - Koristimo [DogAPI by kinduff](https://dogapi.dog/) za prikaz zanimljivosti o psima u sekciji Zanimljivosti
+- **Zavisnosti:** Lista zavisnosti je navedena u `package.json` datoteci
+
+## **Kontakt**
+
+Za sva pitanja, sugestije ili prijave problema, kontaktirajte nas putem:
+
+- **GitHub:** [udomiMe GitHub](https://github.com/elab-development/klijentske-veb-tehnologije-2024-2022-0330-usvajanje-kucnih-ljubimaca.git)
+
+Hvala što koristite udomiMe!
+
+
