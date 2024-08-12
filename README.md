@@ -24,23 +24,21 @@ Dobrodošli u aplikaciju udomiMe! Osnovna namena ove aplikacije je omogućavanje
 
 Da biste započeli instalaciju ove aplikacije, pratite sledeće korake:
 
-1. **Klonirajte repozitorijum:**
+1. **Klonirajte repozitorijum i uđite u njega:**
 
    ```bash
    git clone https://github.com/elab-development/klijentske-veb-tehnologije-2024-2022-0330-usvajanje-kucnih-ljubimaca.git
+   cd klijentske-veb-tehnologije-2024-2022-0330-usvajanje-kucnih-ljubimaca
    ```
 2. **Instalirajte zavisnosti:**
-   - Prvo pređite u direktorijum u koji ste klonirali aplikaciju 
-   ```bash
-  cd klijentske-veb-tehnologije-2024-2022-0330-usvajanje-kucnih-ljubimaca
-   ```
-  
-  - Sada instalirajte zavisnosti
+
   ```bash
   npm install
   ```
+
 3. **Pokrenite aplikaciju:**
   - Nakon što su sve zavisnosti instalirane aplikaciju pokrećete lokalno kucanjem komande
+
   ```bash
   npm run dev
   ```
@@ -52,7 +50,7 @@ Da biste započeli instalaciju ove aplikacije, pratite sledeće korake:
 
 1. **Pretraživanje ljubimaca:**
 
-    - Možeze koristiti filtere za pretragu ljubimaca
+    - Možete koristiti filtere za pretragu ljubimaca
     - Kliknite na profile ljubimaca za više informacija
 
 2. **Prijava za usvajanje:**
