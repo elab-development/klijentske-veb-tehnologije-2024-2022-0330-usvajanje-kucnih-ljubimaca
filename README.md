@@ -1,4 +1,4 @@
-# Aplikacija za usvajanje kućnih ljubimaca
+# udomiMe
 
 Dobrodošli u aplikaciju udomiMe! Osnovna namena ove aplikacije je omogućavanje korisnicima da usvoje životinje koje nemaju dom.
 
@@ -30,17 +30,17 @@ Da biste započeli instalaciju ove aplikacije, pratite sledeće korake:
    git clone https://github.com/elab-development/klijentske-veb-tehnologije-2024-2022-0330-usvajanje-kucnih-ljubimaca.git
    ```
 2. **Instalirajte zavisnosti:**
-  Prvo pređite u direktorijum u koji ste klonirali aplikaciju 
+   - Prvo pređite u direktorijum u koji ste klonirali aplikaciju 
    ```bash
   cd klijentske-veb-tehnologije-2024-2022-0330-usvajanje-kucnih-ljubimaca
    ```
   
-  Sada instalirajte zavisnosti
+  - Sada instalirajte zavisnosti
   ```bash
   npm install
   ```
 3. **Pokrenite aplikaciju:**
-  Nakon što su sve zavisnosti instalirane aplikaciju pokrećete lokalno kucanjem komande
+  - Nakon što su sve zavisnosti instalirane aplikaciju pokrećete lokalno kucanjem komande
   ```bash
   npm run dev
   ```
